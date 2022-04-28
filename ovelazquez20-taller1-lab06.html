@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html amp lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Mi pagina en amp</title>
+  <link rel="canonical" href="#" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>
+  body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+  <style amp-custom>
+  	  body{
+  	  	margin:0px;
+  	  	padding: 0px;
+  	  	font-family: 'Nanum Gothic', sans-serif;
+          background: #26292C;
+  	  }
+  	  .cont{
+  	  	margin: auto;
+          background: #D3D5D4;
+  	  	width: 90%;
+  	  	padding: 20px 10px;
+  	  	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  	  }
+      header{
+        width: 100%;
+        display: block;
+        
+      }
+      header ul li{
+      	list-style: none;
+      	display: inline-block;
+      	padding: 10px;
+          
+      }
+      .li-title{width: 300px; text-align: left;}
+      	.li-mn{
+      	width: 80px;border-radius:21px 2px 30px ;text-align: center;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;background: #26292C;color:#fff;}
+      	.li-mn a{text-decoration: none;color:#fff;font-weight: bold;padding: 10px;}
+      	.li-mn:hover{background:#079ED5;color:#fff;}
+      	.li-mn a:hover{color:#eee;}
+      	footer ul li{
+      		list-style: none;
+      		display: inline-block;
+      		padding: 20px;
+      		color:#262626;
+      	}
+      .div{display: inline-block;width: 45%;padding: 10px;margin: auto;color: aliceblue;}
+      section{background:#26292C;}  
+      
+/*      amp-img{min-width:100%;}*/
+      .pin{width: 30px;height: 30px; }
+      .aling-block{display: inline-block; text-align: center;}
+      .paragrah{font-weight: 500;}
+      .user{width: 100px;height: 100px;margin: auto;}
+      @media (max-width: 729px){
+          .div{width: 100%} 
+          
+          .li-mn{width:70%;margin:3px}
+          header {width:100%; }
+           header ul li{
+            width: 400px;
+               display: block;
+          }
+      }
+      amp-carousel{border-top: 1px solid #A0A4A5;padding: 10px;margin-bottom:10px;}
+      
+   </style>
+</head>
+<body>
+	<div class="cont">
+	<header>
+		
+		<ul>
+            <li class="li-title"><span><b>MY AMP</b></span></li>
+			<li class="li-mn"><a href="ovelazquez20-taller1-lab01.html">Lab01</a></li>
+			<li class="li-mn"><a href="ovelazquez20-taller1-lab02.html">Lab02</a></li>
+			<li class="li-mn"><a href="ovelazquez20-taller1-lab03.html">Lab03</a></li>
+			<li class="li-mn"><a href="ovelazquez20-taller1-lab04.html">Lab04</a></li>
+			<li class="li-mn"><a href="ovelazquez20-taller1-lab05.html">Lab05</a></li>
+			<li class="li-mn"><a href="ovelazquez20-taller1-lab06.html">Lab06</a></li>
+		</ul>
+	</header>
+    <amp-carousel height="300" layout="fixed-height" type="carousel" role="region" aria-label="Basic usage carousel">
+      <amp-img src="https://caguas.gov.pr/wp-content/uploads/2019/12/hero-caguas-informa.jpg" width="400" height="300" alt="a sample image"></amp-img>
+      <amp-img src="https://live.staticflickr.com/1317/655103194_168c80f71a_b.jpg" width="400" height="300" alt="another sample image"></amp-img>
+      <amp-img src="https://boricua.com/wp-content/uploads/2021/04/PAS_1006-1024x684.jpg" width="400" height="300" alt="and another sample image"></amp-img>
+      <amp-img src="https://boricuaonline.com/wp-content/uploads/2016/12/caguas.jpg" width="400" height="300" alt="another sample image"></amp-img>
+    </amp-carousel>
+
+    <section style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+	<div  class="div">
+<!--
+        <amp-iframe
+          width="200"
+          height="100"
+          sandbox="allow-scripts allow-same-origin"
+          layout="responsive"
+          frameborder="0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAyAS599A2GGPKTmtNr9CptD61LE4gN6oQ&q=iceland"
+        >
+        </amp-iframe>
+-->
+		<amp-img src="https://i.ibb.co/GvcSw6z/map.png" width="600" height="400" layout="responsive"></amp-img>
+	</div>
+    
+    <div  class="div profile">
+        <h2>Bienvenidos a Caguas, PR.</h2>
+        <amp-img  class="user" src="https://i.ibb.co/D8cFFvF/profile.png" width="200" height="200" layout="responsive"></amp-img>
+        <p class="paragrah">Mi nombre es Omar Velazquez, nacido y actualmente resido en el pueblo de Caguas. </p><br>
+        <div>
+            <amp-img class="pin aling-block" src="https://i.ibb.co/zHs7XKN/icon01.png" width="80px" height="80px" layout="responsive" ></amp-img>
+            <span class="aling-block paragrah" style="float: right;font-weight: bold;">Vivo en la Urbanización <b>Villa Blanca</b>,<br> a minutos del Centro Comercial Plaza Centro.</span>
+        </div>
+        
+    </div>
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#708293" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,128C384,117,480,139,576,128C672,117,768,75,864,74.7C960,75,1056,117,1152,117.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+     
+
+	</div>
+</body>
+</html>
+<!--
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/zHs7XKN/icon01.png" alt="icon01" border="0"></a>
+<a href="https://ibb.co/vkTJPg6"><img src="https://i.ibb.co/rHzZ6TR/img01.png" alt="img01" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/GvcSw6z/map.png" alt="map" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/D8cFFvF/profile.png" alt="profile" border="0"></a>-->

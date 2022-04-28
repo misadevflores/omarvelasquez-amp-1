@@ -1,0 +1,81 @@
+<!--
+  ## Introduction
+
+  Use [`amp-video`](/content/amp-dev/documentation/components/reference/amp-video-v0.1.md) to embed videos into your AMP HTML files. Video source files must be served via HTTPS.
+--><!-- -->
+<!doctype html>
+<html ⚡ lang="en">
+<head>
+<meta charset="utf-8">
+  <title>amp-video</title>
+
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <link rel="canonical" href="https://amp.dev/documentation/examples/components/amp-video/index.html">
+  <meta name="viewport" content="width=device-width">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>
+     body{
+        margin:0px;
+        padding: 0px;
+        font-family: 'Nanum Gothic', sans-serif;
+      }
+      .cont{
+        margin: auto;
+        width: 90%;
+        padding: 20px 10px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+      }
+      header{
+        width: 100%;
+        display: block;
+      }
+      header ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 20px;
+      }
+      .li-title{
+        width: 15%; text-align: left;}
+        .li-mn{
+        width: 80px;border-radius:3px ;text-align: center;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;}
+        .li-mn a{text-decoration: none;color:#262626;font-weight: bold;}
+        .li-mn:hover{background:#262626;color:#fff;}
+        .li-mn a:hover{color:#eee;}
+        footer ul li{
+          list-style: none;
+          display: inline-block;
+          padding: 20px;
+          color:#262626;
+        }
+  </style>
+</head>
+<body>
+<div class="cont">
+  <header>
+    
+    <ul>
+      <li class="li-title"><h2>MY AMP</h2></li>
+      <li class="li-mn"><a href="ovelazquez20-taller1-lab01.html">Lab01</a></li>
+      <li class="li-mn"><a href="ovelazquez20-taller1-lab02.html">Lab02</a></li>
+      <li class="li-mn"><a href="ovelazquez20-taller1-lab03.html">Lab03</a></li>
+      <li class="li-mn"><a href="ovelazquez20-taller1-lab04.html">Lab04</a></li>
+      <li class="li-mn"><a href="ovelazquez20-taller1-lab05.html">Lab05</a></li>
+      <li class="li-mn"><a href="ovelazquez20-taller1-lab06.html">Lab06</a></li>
+    </ul>
+  </header>
+  <amp-video width="720" height="405" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" poster="https://peach.blender.org/wp-content/uploads/bbb-splash.png" layout="responsive" controls autoplay>
+    <div fallback>
+      <p>Your browser doesn't support HTML5 video.</p>
+    </div>
+  </amp-video>
+  <!-- video de  inframe -->
+  <!--   <amp-video width="720" height="405" src="https://www.youtube.com/embed/npum8JsITQE" poster="https://www.youtube.com/embed/npum8JsITQE" layout="responsive" controls autoplay>
+    <div fallback>
+      <p>Your browser doesn't support HTML5 video.</p>
+    </div>
+  </amp-video> -->
+</div>
+
+</body></html>
